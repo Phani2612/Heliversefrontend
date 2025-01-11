@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
 const Modal = ({ title, shift, onClose , onShare }) => {
 
     const [MealPlans , setMealPlans] = useState({
@@ -26,6 +27,14 @@ const Modal = ({ title, shift, onClose , onShare }) => {
         e.preventDefault()
 
         onShare({ [shift]: MealPlans[shift] }, shift);
+
+        Swal.fire({
+
+          title : "Succes!",
+          text:'Saved successfully',
+          icon:'success'
+        })
+
 
     }
     
