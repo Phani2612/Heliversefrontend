@@ -1,0 +1,106 @@
+/* Overlay styling */
+.delay-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark, semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Modal container */
+  .delay-modal-content {
+    background: #ffffff; /* Clean white background */
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    animation: slideIn 0.4s ease-in-out; /* Animation on load */
+    position: relative;
+    overflow-y: auto;
+    max-height: 80vh; /* Prevent modal from exceeding the screen */
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+  }
+  
+  .close-button:hover {
+    transform: scale(1.2);
+    color: #d32f2f; /* Hover effect with red color */
+  }
+  
+  
+  
+  /* Delayed meals list container */
+  .delayed-meals-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between meal cards */
+  }
+  
+  /* Individual delayed meal card */
+  .delayed-meal-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .delayed-meal-card:hover {
+    transform: scale(1.02); /* Slight pop-out effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Meal card title */
+  .delayed-meal-card h3 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  /* Key-value pair styling */
+  .delayed-meal-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .delayed-meal-card p strong {
+    color: #333;
+  }
+  
+  /* Add subtle border around the patient details */
+  .delayed-meal-card p:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

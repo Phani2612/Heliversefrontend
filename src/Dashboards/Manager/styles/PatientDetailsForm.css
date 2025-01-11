@@ -1,0 +1,129 @@
+/* Modal Overlay */
+.patientdetails-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    
+  }
+  
+  /* Modal Box */
+  .patientdetails-modal {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 600px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: scaleIn 0.3s ease-in-out;
+    overflow-y: scroll;
+    height: 600px;
+  }
+  
+  /* Modal Animation */
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Modal Title */
+  .patientdetails-modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Close Button */
+  .patientdetails-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s;
+  }
+  
+  .patientdetails-close-button:hover {
+    color: #333;
+  }
+  
+  /* Form Styling */
+  .patientdetails-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .patientdetails-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .patientdetails-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .patientdetails-group input,
+  .patientdetails-group textarea,
+  .patientdetails-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .patientdetails-group input:focus,
+  .patientdetails-group textarea:focus,
+  .patientdetails-group select:focus {
+    border-color: #6e8efb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+  }
+  
+  .patientdetails-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .patientdetails-submit-button {
+    padding: 10px 15px;
+    background-color: #6e8efb;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .patientdetails-submit-button:hover {
+    background-color: #5a7de2;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  

@@ -1,0 +1,243 @@
+/* General container */
+.delivery-home-container {
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+    min-height: 100vh;
+  }
+  
+  /* Title styling */
+  .delivery-home-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #087f23;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Card styling */
+  .delivery-home-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+  }
+  
+  .delivery-home-card-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #087f23;
+    padding-bottom: 10px;
+  }
+  
+  .delivery-home-card-header h3 {
+    font-size: 24px;
+    color: #087f23;
+  }
+  
+  .delivery-home-card-body {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .patient-info p {
+    margin: 5px 0;
+  }
+  
+  /* Meal status table styling */
+  .meal-status-table {
+    margin-top: 30px;
+  }
+  
+  .meal-status-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .meal-status-table th,
+  .meal-status-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .meal-status-table th {
+    background-color: #087f23;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .meal-status-table td {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .meal-status-table select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .meal-status-table select:focus {
+    border-color: #087f23;
+    box-shadow: 0 0 5px rgba(8, 127, 35, 0.5);
+  }
+  
+  /* Loading message */
+  .delivery-home-loading-message {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .delivery-home-no-data {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  /* Mobile View (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .delivery-home-container {
+    padding: 10px;
+  }
+
+  .delivery-home-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .delivery-home-card {
+    padding: 15px;
+    margin-top: 30px;
+
+    overflow: auto;
+  }
+
+  .delivery-home-card-header h3 {
+    font-size: 20px;
+  }
+
+  .delivery-home-card-body {
+    font-size: 14px;
+  }
+
+  .meal-status-table th, 
+  .meal-status-table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .meal-status-table select {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .delivery-home-loading-message,
+  .delivery-home-no-data {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+
+/* Tablet View (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .delivery-home-container {
+    padding: 15px;
+  }
+
+  .delivery-home-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .delivery-home-card {
+    padding: 18px;
+    margin-top: 40px;
+
+    overflow: auto;
+  }
+
+  .delivery-home-card-header h3 {
+    font-size: 22px;
+  }
+
+  .delivery-home-card-body {
+    font-size: 15px;
+  }
+
+  .meal-status-table th,
+  .meal-status-table td {
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .meal-status-table select {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .delivery-home-loading-message,
+  .delivery-home-no-data {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+}
+
+/* Desktop View (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+  .delivery-home-container {
+    padding: 20px 40px;
+  }
+
+  .delivery-home-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .delivery-home-card {
+    padding: 20px;
+    margin-top: 50px;
+    overflow: auto;
+  }
+
+  .delivery-home-card-header h3 {
+    font-size: 24px;
+  }
+
+  .delivery-home-card-body {
+    font-size: 16px;
+  }
+
+  .meal-status-table th,
+  .meal-status-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .meal-status-table select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .delivery-home-loading-message,
+  .delivery-home-no-data {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}

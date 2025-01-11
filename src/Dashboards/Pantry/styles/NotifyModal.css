@@ -1,0 +1,136 @@
+.notification-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 999;
+
+    
+  }
+  
+  .notification-modal {
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    border-radius: 12px;
+    width: 750px;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: slide-down 0.3s ease-out;
+    margin: 80px  50px;
+   
+    
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+   
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+  }
+
+  
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close-btn:hover {
+    color: #ff4d4d;
+  }
+  
+  .modal-content {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+
+    width: 100%;
+  }
+  
+  .notification-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+   
+  }
+  
+  .notification-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .meal-status-section {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .status-tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .meal-time {
+    color: #007bff;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .status {
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .status.pending {
+    background-color: #f44336; 
+  }
+  
+  .status.in progress {
+    background-color: #ff9800; 
+  }
+  
+  .status.done {
+    background-color: #4caf50; 
+  }
+  
+  @keyframes slide-down {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+   

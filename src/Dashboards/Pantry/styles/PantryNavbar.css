@@ -1,0 +1,173 @@
+/* General Navbar Styling */
+.pantry-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff; /* Primary Blue */
+  color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Logo Styling */
+.pantry-navbar-logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Menu Items */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Notification Button */
+.notification-btn {
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.notification-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Notification Badge */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ff3e3e; /* Red color for notifications */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #ff3e3e; /* Logout button in red */
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #cc3333;
+  transform: scale(1.05);
+}
+
+/* Icons Styling */
+.icon {
+  font-size: 20px;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1024px (tablets, large phones) */
+@media (max-width: 1024px) {
+
+  
+  .pantry-navbar {
+    padding: 10px 20px; /* Slightly reduce padding for smaller screens */
+    
+  
+  }
+
+  .pantry-navbar-logo h1 {
+    font-size: 20px; /* Reduce logo font size */
+  }
+
+  .navbar-menu {
+    gap: 15px; /* Reduce space between menu items */
+  }
+
+  .notification-btn {
+    font-size: 16px; /* Reduce notification button size */
+  }
+
+  .logout-btn {
+    font-size: 14px; /* Reduce logout button font size */
+    padding: 8px 16px; /* Reduce padding */
+  }
+}
+
+/* For screens smaller than 768px (mobile phones) */
+@media (max-width: 768px) {
+  .pantry-navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    padding: 10px 15px;
+ 
+  }
+
+  .pantry-navbar-logo h1 {
+    font-size: 18px; /* Further reduce the logo size */
+  }
+
+  .navbar-menu {
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 10px; /* Reduce the gap */
+    margin-top: 10px;
+  }
+
+  .notification-btn {
+    font-size: 14px; /* Further reduce button font size */
+  }
+
+  .logout-btn {
+    font-size: 12px; /* Further reduce font size */
+    padding: 6px 12px; /* Further reduce padding */
+  }
+}
+
+/* For screens smaller than 480px (extra small phones) */
+@media (max-width: 480px) {
+  .pantry-navbar {
+    padding: 8px 12px; /* Further reduce navbar padding */
+  }
+
+  .pantry-navbar-logo h1 {
+    font-size: 16px; /* Further reduce logo size */
+  }
+
+  .navbar-menu {
+    gap: 8px; /* Further reduce gap between menu items */
+  }
+
+  .notification-btn {
+    font-size: 12px; /* Further reduce notification button size */
+  }
+
+  .logout-btn {
+    font-size: 10px; /* Reduce font size even more */
+    padding: 5px 10px; /* Reduce padding */
+  }
+}

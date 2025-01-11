@@ -1,0 +1,135 @@
+/* Navbar.css */
+.navbar {
+  width: 100%;
+  background-color: #6e8efb;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-button {
+  background-color: #fff;
+  color: #6e8efb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #5a7de2;
+  color: #fff;
+}
+
+#add-patient-button {
+  background-color: #a0d995;
+}
+
+#add-patient-button:hover {
+  background-color: #8bcf7b;
+}
+
+#logout-button {
+  background-color: #f77c7c;
+}
+
+#logout-button:hover {
+  background-color: #f55b5b;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Navbar Menu */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    background-color: #6e8efb;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+
+  .navbar-buttons.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .navbar-button {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .navbar-icon-button {
+  
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .check{
+    position: relative;
+  }
+
+
+  .notification-badge {
+    position: absolute;
+    top: -5px;  /* Adjust for vertical alignment */
+    right: -5px;  /* Adjust for horizontal alignment */
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+
+  .navbar-icon-button .icon {
+    font-size: 24px;  /* Adjust icon size if necessary */
+  }
+}

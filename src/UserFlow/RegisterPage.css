@@ -1,0 +1,123 @@
+/* Container styles */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+  }
+  
+  /* Form Wrapper */
+  .register-form-wrapper {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .register-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .register-input,
+  .register-select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .register-input:focus,
+  .register-select:focus {
+    border-color: #2575fc;
+  }
+  
+  /* Button */
+  .register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #1d64e0;
+  }
+  
+  /* Error Message */
+  .register-error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .register-form-wrapper {
+      padding: 30px;
+      border-radius: 8px;
+    }
+  
+    .register-title {
+      font-size: 1.6rem;
+    }
+  
+    .register-input,
+    .register-select {
+      padding: 12px;
+      font-size: 0.95rem;
+    }
+  
+    .register-button {
+      padding: 12px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .register-container{
+
+         padding: 20px;
+    }
+
+    .register-form-wrapper {
+      padding: 20px;
+    }
+  
+    .register-title {
+      font-size: 1.4rem;
+    }
+  
+    .register-input,
+    .register-select {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .register-button {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
