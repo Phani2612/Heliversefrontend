@@ -184,7 +184,7 @@ function MealPlan() {
  
   
 
-    const requiredShifts = ['morning', 'afternoon', 'evening', 'night'];
+    const requiredShifts = ['morning', 'afternoon', 'evening'];
     const requiredFields = ['details', 'ingredients', 'instructions', 'status'];
   
       // Validate Mealdata
