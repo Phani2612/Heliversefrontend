@@ -42,7 +42,7 @@ function ManagerHome() {
   const fetchAllTasks = async () => {
     try {
       const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/meal/all` , {
-        withCredentials: true, // Ensure cookies are included in the request
+        // withCredentials: true, // Ensure cookies are included in the request
       });
       setTasks(response.data.AllData); // Set fetched tasks in state
     } catch (error) {
