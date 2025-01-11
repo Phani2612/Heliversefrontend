@@ -178,7 +178,7 @@ const LoginPage = () => {
       const response = await axios.post(
         `${process.env.REACT_APP_BACKEND_URL}/login`,
         Userdetails , 
-        { withCredentials: true } // Ensure cookies are included
+        // { withCredentials: true } // Ensure cookies are included
       );
 
       const { message, redirect_url, User_OID, Auth_Token, User_Type } =
